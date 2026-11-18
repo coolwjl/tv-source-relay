@@ -11,7 +11,7 @@
 cache目录、source.json 程序运行自动生成，需要目录读写权限。
 
 ### ngnix伪静态设置
-   根据文件目录进行修改，不设置伪静态也可以
-   rewrite ^/tv$ /index.php last;
-   rewrite ^/tv/([A-Za-z0-9]+)$ /index.php?y=$1 last;
-   rewrite ^/admin$ /index.php?admin last;
+```nginx
+rewrite ^/tv$ /index.php last;
+rewrite ^/tv/([A-Za-z0-9]+)$ /index.php?y=$1 last;
+rewrite ^/admin$ /index.php?admin last;
