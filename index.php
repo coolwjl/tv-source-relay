@@ -245,6 +245,7 @@ h4 { margin-top: 0;}
 <?php
 $proto = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on') ? 'https' : 'http';
 $path = rtrim(dirname($_SERVER['SCRIPT_NAME']), '/'); 
+$scriptName = basename($_SERVER['SCRIPT_NAME']);    
 $baseUrl = $proto . '://' . $_SERVER['HTTP_HOST'] . $path . '/'. $scriptName;
 echo $baseUrl ;
 ?>
