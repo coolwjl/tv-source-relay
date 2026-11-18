@@ -244,12 +244,13 @@ h4 { margin-top: 0;}
 <strong>
 <?php
 $proto = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on') ? 'https' : 'http';
-$baseUrl = $proto . '://' . $_SERVER['HTTP_HOST'] . dirname($_SERVER['SCRIPT_NAME']) . 'tv';
+$path = rtrim(dirname($_SERVER['SCRIPT_NAME']), '/'); 
+$baseUrl = $proto . '://' . $_SERVER['HTTP_HOST'] . $path . '/'. $scriptName;
 echo $baseUrl ;
 ?>
 </strong>
 </code>
-<p style="margin:8px 0 0 0;font-size:14px;color:#666;">指定源：<?=$baseUrl?>/代号</p>
+<p style="margin:8px 0 0 0;font-size:14px;color:#666;">指定源：<?=$baseUrl?>?y=代号</p>
 </div>
 <script>
     function copyUrl(){
