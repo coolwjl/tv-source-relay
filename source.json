@@ -1,0 +1,68 @@
+{
+    "default_id": 1,
+    "list": [
+        {
+            "id": 1,
+            "code": "fty1",
+            "name": "\u996d\u592a\u786c-1",
+            "url": "http://www.\u996d\u592a\u786c.net/tv",
+            "note": ""
+        },
+        {
+            "id": 2,
+            "code": "fty2",
+            "name": "\u996d\u592a\u786c-2",
+            "url": "http://www.\u996d\u592a\u786c.cc/tv",
+            "note": ""
+        },
+        {
+            "id": 3,
+            "code": "fm1",
+            "name": "\u80a5\u732b-1",
+            "url": "http://\u80a5\u732b.net/",
+            "note": ""
+        },
+        {
+            "id": 4,
+            "code": "fm2",
+            "name": "\u80a5\u732b-2",
+            "url": "http://hello.\u80a5\u732b.net/",
+            "note": ""
+        },
+        {
+            "id": 5,
+            "code": "fm3",
+            "name": "\u80a5\u732b-3",
+            "url": "https://w.junce.dpdns.org/fm.gif",
+            "note": ""
+        },
+        {
+            "id": 6,
+            "code": "fm4",
+            "name": "\u80a5\u732b-\u5b89\u53534",
+            "url": "http://hello.\u80a5\u732b.net/tv",
+            "note": "\u5b89\u53534\u4ee5\u4e0b"
+        },
+        {
+            "id": 7,
+            "code": "fnw",
+            "name": "\u738b\u4e8c\u5c0f\u653e\u725b\u5a03",
+            "url": "http://tvbox.\u738b\u4e8c\u5c0f\u653e\u725b\u5a03.top",
+            "note": ""
+        },
+        {
+            "id": 8,
+            "code": "ysc",
+            "name": "\u5f71\u89c6\u4ed3",
+            "url": "http://\u5f71\u89c6\u4ed3.com/",
+            "note": ""
+        },
+        {
+            "id": 9,
+            "code": "bhjk",
+            "name": "\u5b9d\u76d2\u63a5\u53e3",
+            "url": "https://\u5b9d\u76d2\u63a5\u53e3.top",
+            "note": ""
+        }
+    ]
+}
