@@ -1,5 +1,6 @@
 # TV中转源管理PHP
 单文件TV源中转+web管理面板。
+源失效后可以在手机上一键切换，还可以指定特定的源，不用在电视上按遥控器操作
 
 ## 部署步骤
 1. 上传 index.php、config.example.php 到php服务器
@@ -10,8 +11,11 @@
 ### 目录权限
 cache目录、source.json 程序运行自动生成，需要目录读写权限。
 
-### ngnix伪静态设置
+#### ngnix伪静态设置
 ```nginx
 rewrite ^/tv$ /index.php last;
 rewrite ^/tv/([A-Za-z0-9]+)$ /index.php?y=$1 last;
 rewrite ^/admin$ /index.php?admin last;
+
+#### 演示页面
+<img width="442" height="952" alt="image" src="https://github.com/user-attachments/assets/7aa33b6c-b13c-42a2-8882-025f7a869d1f" />
