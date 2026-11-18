@@ -1,6 +1,6 @@
 <?php
 if (!file_exists(__DIR__ . '/config.php')) {
-    exit('❌ 缺少配置文件 config.php，请复制 config.example.php 并重命名修改密码！');
+    exit('❌ 缺少配置文件 config.php，请复制 config.php 到程序目录！');
 }
 require __DIR__ . '/config.php';
 
