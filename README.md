@@ -5,11 +5,12 @@ AI写的单文件TV中转源web管理面板
 老人或者老婆看不了电视时，做儿子和好老公的就可以不用浪费口水了……  
 
 支持各种空壳类影视APP，TVBOX、fongmi影视、OK影视、影视仓等等  
-source.json里面已经内制了几条相对稳定的源，按需食用
+source.json里面已经内制了几条相对稳定的源，按需食用  
+本文件只对上游源进行缓存并转发，不做任何修改，默认缓存时间为12小时，减小上游源的服务器压力
 
 ## 部署步骤
-1. 上传 index.php、config.example.php 到php服务器
-2. 复制 config.example.php 为 config.php，修改里面账号密码
+1. 上传 index.php、config.php、source.json 到php服务器
+2. 修改config.php里面账号密码
 3. 访问 `index.php?admin` 进入管理后台
 4. 接口直接访问 index.php，指定源：`index.php?y=XXX`
 5. 配置好伪静态后可以简化URL
