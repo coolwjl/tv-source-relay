@@ -7,14 +7,15 @@
 2. 复制 config.example.php 为 config.php，修改里面账号密码
 3. 访问 `index.php?admin` 进入管理后台
 4. 接口直接访问 index.php，指定源：`index.php?y=XXX`
+5. 配置好伪静态后可以简化URL
 
 ### 目录权限
 cache目录、source.json 程序运行自动生成，需要目录读写权限。
 
-#### 演示页面
+### 演示页面
 <img width="442" height="952" alt="image" src="https://github.com/user-attachments/assets/7aa33b6c-b13c-42a2-8882-025f7a869d1f" />
 
-##### ngnix伪静态设置
+#### ngnix伪静态设置
 ```nginx
 rewrite ^/tv$ /index.php last;
 rewrite ^/tv/([A-Za-z0-9]+)$ /index.php?y=$1 last;
