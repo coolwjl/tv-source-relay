@@ -11,11 +11,11 @@
 ### 目录权限
 cache目录、source.json 程序运行自动生成，需要目录读写权限。
 
-#### ngnix伪静态设置
+#### 演示页面
+<img width="442" height="952" alt="image" src="https://github.com/user-attachments/assets/7aa33b6c-b13c-42a2-8882-025f7a869d1f" />
+
+##### ngnix伪静态设置
 ```nginx
 rewrite ^/tv$ /index.php last;
 rewrite ^/tv/([A-Za-z0-9]+)$ /index.php?y=$1 last;
 rewrite ^/admin$ /index.php?admin last;
-
-#### 演示页面
-<img width="442" height="952" alt="image" src="https://github.com/user-attachments/assets/7aa33b6c-b13c-42a2-8882-025f7a869d1f" />
