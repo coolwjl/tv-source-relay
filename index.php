@@ -403,7 +403,7 @@ if (!is_dir($cacheDir)) {
 }
 if (!file_exists($jsonFile)) {
     http_response_code(500);
-    exit('配置文件不存在');
+    exit('数据文件不存在，请进入管理界面添加数据并设置默认源');
 }
 $cfg = json_decode(file_get_contents($jsonFile), true);
 $wantCode = trim($_GET['y'] ?? '');
@@ -435,7 +435,7 @@ if ($target === null) {
 // 连默认源都没有
 if ($target === null) {
     http_response_code(503);
-    exit('未设置默认源');
+    exit('请进入管理界面添加数据并设置默认源');
 }
 
 $cacheKey = md5($useCode);
